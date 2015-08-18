@@ -1,0 +1,73 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [Log4js-dev] patch for [ Bug #14274 ] Object.prototype.extend	interferes with other code
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/log4js-dev/2008-July/index.html" >
+   <LINK REL="made" HREF="mailto:log4js-dev%40lists.berlios.de?Subject=Re%3A%20%5BLog4js-dev%5D%20patch%20for%20%5B%20Bug%20%2314274%20%5D%20Object.prototype.extend%0A%09interferes%20with%20other%20code&In-Reply-To=%3C25097ca30807271311s3d8fd4b7vd51a7b2b000dfdeb%40mail.gmail.com%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   
+   
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[Log4js-dev] patch for [ Bug #14274 ] Object.prototype.extend	interferes with other code</H1>
+    <B>Log4js Developer Mailing List</B> 
+    <A HREF="mailto:log4js-dev%40lists.berlios.de?Subject=Re%3A%20%5BLog4js-dev%5D%20patch%20for%20%5B%20Bug%20%2314274%20%5D%20Object.prototype.extend%0A%09interferes%20with%20other%20code&In-Reply-To=%3C25097ca30807271311s3d8fd4b7vd51a7b2b000dfdeb%40mail.gmail.com%3E"
+       TITLE="[Log4js-dev] patch for [ Bug #14274 ] Object.prototype.extend	interferes with other code">log4js-dev at lists.berlios.de
+       </A><BR>
+    <I>Sun Jul 27 22:11:42 CEST 2008</I>
+    <P><UL>
+        
+        
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#3">[ date ]</a>
+              <a href="thread.html#3">[ thread ]</a>
+              <a href="subject.html#3">[ subject ]</a>
+              <a href="author.html#3">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>I don't see a place on the bug tracker to submit a patch, but here one is.
+
+Basically I got rid of Function.prototype.bind and Object.prototype.extend
+and changed them to Log4js.bind and Log4js.extend. Have not rigorously
+tested but things seem to work and the changes are very superficial.
+
+Harlan
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: &lt;<A HREF="https://lists.berlios.de/pipermail/log4js-dev/attachments/20080727/53afd122/attachment.html">https://lists.berlios.de/pipermail/log4js-dev/attachments/20080727/53afd122/attachment.html</A>&gt;
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: log4js.js-removeglobals.patch
+Type: application/octet-stream
+Size: 10446 bytes
+Desc: not available
+URL: &lt;<A HREF="https://lists.berlios.de/pipermail/log4js-dev/attachments/20080727/53afd122/attachment.obj">https://lists.berlios.de/pipermail/log4js-dev/attachments/20080727/53afd122/attachment.obj</A>&gt;
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	
+	
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#3">[ date ]</a>
+              <a href="thread.html#3">[ thread ]</a>
+              <a href="subject.html#3">[ subject ]</a>
+              <a href="author.html#3">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/log4js-dev">More information about the Log4js-dev
+mailing list</a><br>
+</body></html>
